@@ -24,6 +24,7 @@ class CameraService {
     func start(delegate: AVCapturePhotoCaptureDelegate, completion: @escaping (Error) -> ()) {
         // Set the value of the `delegate` property to the value of the `delegate` parameter
         self.delegate = delegate
+        checkCameraPermission(completion: completion)
     }
     
     // Define a private method named `checkCameraPermission` that accepts a `completion` parameter of type `(Error) -> ()`, and returns void

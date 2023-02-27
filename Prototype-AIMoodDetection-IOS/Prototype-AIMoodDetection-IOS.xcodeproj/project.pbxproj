@@ -13,6 +13,7 @@
 		C5156D9D29A792D000299DCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5156D9C29A792D000299DCE /* Preview Assets.xcassets */; };
 		C5A1146729AC893500C9397C /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A1146629AC893500C9397C /* CameraService.swift */; };
 		C5A1146929AC90A500C9397C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A1146829AC90A500C9397C /* CameraView.swift */; };
+		C5B484EC29ACAA0A0015B3A9 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B484EB29ACAA0A0015B3A9 /* CustomCameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C5156D9C29A792D000299DCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5A1146629AC893500C9397C /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		C5A1146829AC90A500C9397C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C5B484EB29ACAA0A0015B3A9 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				C5156D9B29A792D000299DCE /* Preview Content */,
 				C5A1146629AC893500C9397C /* CameraService.swift */,
 				C5A1146829AC90A500C9397C /* CameraView.swift */,
+				C5B484EB29ACAA0A0015B3A9 /* CustomCameraView.swift */,
 			);
 			path = "Prototype-AIMoodDetection-IOS";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				C5156D9829A792CE00299DCE /* ContentView.swift in Sources */,
 				C5156D9629A792CE00299DCE /* Prototype_AIMoodDetection_IOSApp.swift in Sources */,
+				C5B484EC29ACAA0A0015B3A9 /* CustomCameraView.swift in Sources */,
 				C5A1146729AC893500C9397C /* CameraService.swift in Sources */,
 				C5A1146929AC90A500C9397C /* CameraView.swift in Sources */,
 			);
