@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             if (capturedImage != nil) {
-                Image(uiImage: capturedImage!).resizable().scaledToFill().ignoresSafeArea()
+                Image(uiImage: capturedImage!).resizable().scaledToFill().ignoresSafeArea().scaleEffect(x: -1, y: 1, anchor: .center)
             } else {
                 Color(UIColor.systemBackground)
             }

@@ -60,10 +60,12 @@ class CameraService {
     private func setupCamera(completion: @escaping (Error) -> ()) {
         // Create a new `AVCaptureSession`
         let session = AVCaptureSession()
-        // Get the default video capture device
-        if let device = AVCaptureDevice.default(for: .video) {
+        
+        // Get the front camera
+        let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .front)
+        if let device = discoverySession.devices.first {
             do {
-                // Create an `AVCaptureDeviceInput` object from the default video capture device
+                // Create an `AVCaptureDeviceInput` object from the front camera
                 let input = try AVCaptureDeviceInput(device: device)
                 // If the session can add the input, add it to the session
                 if session.canAddInput(input) {
@@ -74,13 +76,14 @@ class CameraService {
                 if session.canAddOutput(output) {
                     session.addOutput(output)
                 }
-                
                 // Set the video gravity of the preview layer to `resizeAspectFill`
                 previewLayer.videoGravity = .resizeAspectFill
                 //Set the session of the preview layer to 'session'
                 previewLayer.session = session
                 //Start running session
-                session.startRunning()
+                DispatchQueue.global(qos: .userInitiated).async {
+                    session.startRunning()
+                }
                 self.session = session
             } catch {
                 completion(error)
