@@ -11,6 +11,8 @@
 		C5156D9829A792CE00299DCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5156D9729A792CE00299DCE /* ContentView.swift */; };
 		C5156D9A29A792D000299DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5156D9929A792D000299DCE /* Assets.xcassets */; };
 		C5156D9D29A792D000299DCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5156D9C29A792D000299DCE /* Preview Assets.xcassets */; };
+		C5A1146729AC893500C9397C /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A1146629AC893500C9397C /* CameraService.swift */; };
+		C5A1146929AC90A500C9397C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A1146829AC90A500C9397C /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C5156D9729A792CE00299DCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5156D9929A792D000299DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5156D9C29A792D000299DCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5A1146629AC893500C9397C /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		C5A1146829AC90A500C9397C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				C5156D9729A792CE00299DCE /* ContentView.swift */,
 				C5156D9929A792D000299DCE /* Assets.xcassets */,
 				C5156D9B29A792D000299DCE /* Preview Content */,
+				C5A1146629AC893500C9397C /* CameraService.swift */,
+				C5A1146829AC90A500C9397C /* CameraView.swift */,
 			);
 			path = "Prototype-AIMoodDetection-IOS";
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			files = (
 				C5156D9829A792CE00299DCE /* ContentView.swift in Sources */,
 				C5156D9629A792CE00299DCE /* Prototype_AIMoodDetection_IOSApp.swift in Sources */,
+				C5A1146729AC893500C9397C /* CameraService.swift in Sources */,
+				C5A1146929AC90A500C9397C /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,7 @@
 				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to make photos and detect emotion on the face.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +308,7 @@
 				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to make photos and detect emotion on the face.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
